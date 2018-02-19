@@ -1,0 +1,45 @@
+
+.container {
+	position: relative;
+
+	width: 1024px; 
+	height: 1024px;
+
+}
+
+.black-block {
+
+	position: relative;
+
+	width: 30%; 
+	height: 100vh;
+
+	background-color: #000;
+
+	float: left;
+}
+
+.white-block {
+
+	position: relative;
+
+	width: 70%;
+	height: 100vh;
+
+	background-color: yellow;
+
+	float: left;
+
+}
+
+.main-title {
+
+	position: relative; 
+	top: 20px;
+
+	text-align: center;
+
+	font-size: 65px; 
+	font-family: montserrat-sb;
+	color: #FFF;
+}

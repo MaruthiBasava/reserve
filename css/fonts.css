@@ -1,0 +1,29 @@
+@font-face {
+	font-family: glacial-indiff-b;
+	src: url('../fonts/GlacialIndifference-Bold.otf');
+}
+
+@font-face {
+	font-family: glacial-indiff-r;
+	src: url('../fonts/GlacialIndifference-Regular.otf');
+}
+
+@font-face {
+	font-family: montserrat-l;
+	src: url('../fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+	font-family: montserrat-sb;
+	src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: raleway-m;
+	src: url('../fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+	font-family: raleway-b;
+	src: url('../fonts/Raleway-Bold.ttf');
+}
