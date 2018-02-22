@@ -1,202 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Reserve.</title>
-    <link rel="shortcut icon" type="image/png" href="imgs/favicon.jpg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <title>
+      Reserve.
+    </title>
+    <link href="imgs/favicon.jpg" rel="shortcut icon" type="image/png">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="http://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
   </head>
   <body>
     <div class=".container">
       <div class="black-block">
-        <p class="main-title">reserve.</p>
+        <p class="main-title">
+          reserve.
+        </p>
       </div>
+
       <div class="white-block">
         <div class="question-1-block center hidden">
           <p class="question-1-title">
-            Need to reserve a <span class="r-bold">computer lab</span>
-            or <span class="r-bold">cart</span>?
+            Need to reserve a <span class="r-bold">computer lab</span> or <span class="r-bold">cart</span>?
           </p>
+
           <div class="button-group-question-1">
-            <button class="question-1-button">COMPUTER LAB</button>
-            <button class="question-1-button">COMPUTER CART</button>
+            <button class="question-1-button">COMPUTER LAB</button> <button class="question-1-button">COMPUTER CART</button>
           </div>
         </div>
+
         <div class="creation-page-2-block center">
-          <p class="creation-page-title">COMPUTER LAB</p>
+          <p class="creation-page-title">
+            COMPUTER LAB
+          </p>
+
           <div class="question-input-pair">
             <p class="question-label">
-              <span class="r-bold">When</span>
-              do you need it?
+              <span class="r-bold">When</span> do you need it?
             </p>
+
             <div class="time-selection">
               <div class="selector time-month-selection">
-                <p class="selector-title">Month</p>
-                <button id="dropSelector" class="month-selector drop-selector"></button>
-                <div id="monthSelector" class="month-content drop-content">
-                  <p class="question-label">Jan.</p>
-                  <p class="question-label">Feb.</p>
-                  <p class="question-label">Mar.</p>
-                  <p class="question-label">Apr.</p>
-                  <p class="question-label">May</p>
-                  <p class="question-label">Jun.</p>
-                  <p class="question-label">Jul.</p>
-                  <p class="question-label">Aug.</p>
-                  <p class="question-label">Sep.</p>
-                  <p class="question-label">Oct.</p>
-                  <p class="question-label">Nov.</p>
-                  <p class="question-label">Dec.</p>
+                <p class="selector-title">
+                  Month
+                </p>
+                <button class="month-selector drop-selector" id="dropSelector"></button>
+                <div class="month-content drop-content" id="monthSelector">
+                  <p class="question-label">
+                    Jan.
+                  </p>
+
+                  <p class="question-label">
+                    Feb.
+                  </p>
+
+                  <p class="question-label">
+                    Mar.
+                  </p>
+
+                  <p class="question-label">
+                    Apr.
+                  </p>
+
+                  <p class="question-label">
+                    May
+                  </p>
+
+                  <p class="question-label">
+                    Jun.
+                  </p>
+
+                  <p class="question-label">
+                    Jul.
+                  </p>
+
+                  <p class="question-label">
+                    Aug.
+                  </p>
+
+                  <p class="question-label">
+                    Sep.
+                  </p>
+
+                  <p class="question-label">
+                    Oct.
+                  </p>
+
+                  <p class="question-label">
+                    Nov.
+                  </p>
+
+                  <p class="question-label">
+                    Dec.
+                  </p>
                 </div>
               </div>
+
               <div class="selector time-day-selection">
-                <p class="selector-title">Day</p>
-                <button id="dropSelector" class="day-selector drop-selector"></button>
-                <div id="daySelector" class="day-content drop-content">
-                  <p class="question-label">1</p>
-                  <p class="question-label">2</p>
-                  <p class="question-label">3</p>
-                  <p class="question-label">4</p>
-                  <p class="question-label">5</p>
-                  <p class="question-label">6</p>
-                  <p class="question-label">7</p>
-                  <p class="question-label">8</p>
-                  <p class="question-label">9</p>
-                  <p class="question-label">10</p>
-                  <p class="question-label">11</p>
-                  <p class="question-label">12</p>
-                  <p class="question-label">13</p>
-                  <p class="question-label">14</p>
-                  <p class="question-label">15</p>
-                  <p class="question-label">16</p>
-                  <p class="question-label">17</p>
-                  <p class="question-label">18</p>
-                  <p class="question-label">19</p>
-                  <p class="question-label">20</p>
-                  <p class="question-label">21</p>
-                  <p class="question-label">23</p>
-                  <p class="question-label">24</p>
-                  <p class="question-label">25</p>
-                  <p class="question-label">26</p>
-                  <p class="question-label">27</p>
-                  <p class="question-label">28</p>
-                  <p class="question-label">29</p>
-                  <p class="question-label">30</p>
-                  <p class="question-label">31</p>
+                <p class="selector-title">
+                  Day
+                </p>
+                <button class="day-selector drop-selector" id="dropSelector"></button>
+                <div class="day-content drop-content" id="daySelector">
+                  <p class="question-label">
+                    1
+                  </p>
+
+                  <p class="question-label">
+                    2
+                  </p>
+
+                  <p class="question-label">
+                    3
+                  </p>
+
+                  <p class="question-label">
+                    4
+                  </p>
+
+                  <p class="question-label">
+                    5
+                  </p>
+
+                  <p class="question-label">
+                    6
+                  </p>
+
+                  <p class="question-label">
+                    7
+                  </p>
+
+                  <p class="question-label">
+                    8
+                  </p>
+
+                  <p class="question-label">
+                    9
+                  </p>
+
+                  <p class="question-label">
+                    10
+                  </p>
+
+                  <p class="question-label">
+                    11
+                  </p>
+
+                  <p class="question-label">
+                    12
+                  </p>
+
+                  <p class="question-label">
+                    13
+                  </p>
+
+                  <p class="question-label">
+                    14
+                  </p>
+
+                  <p class="question-label">
+                    15
+                  </p>
+
+                  <p class="question-label">
+                    16
+                  </p>
+
+                  <p class="question-label">
+                    17
+                  </p>
+
+                  <p class="question-label">
+                    18
+                  </p>
+
+                  <p class="question-label">
+                    19
+                  </p>
+
+                  <p class="question-label">
+                    20
+                  </p>
+
+                  <p class="question-label">
+                    21
+                  </p>
+
+                  <p class="question-label">
+                    23
+                  </p>
+
+                  <p class="question-label">
+                    24
+                  </p>
+
+                  <p class="question-label">
+                    25
+                  </p>
+
+                  <p class="question-label">
+                    26
+                  </p>
+
+                  <p class="question-label">
+                    27
+                  </p>
+
+                  <p class="question-label">
+                    28
+                  </p>
+
+                  <p class="question-label">
+                    29
+                  </p>
+
+                  <p class="question-label">
+                    30
+                  </p>
+
+                  <p class="question-label">
+                    31
+                  </p>
                 </div>
               </div>
+
               <div class="selector time-block-selection">
-                <p class="selector-title block-title">Block</p>
-                <button class="block-selector">1</button>
-                <button class="block-selector">2</button>
-                <button class="block-selector">3</button>
-                <button class="block-selector">4</button>
-                <br>
-                <button class="block-selector">5</button>
-                <button class="block-selector">6</button>
-                <button class="block-selector">7</button>
-                <button class="block-selector">8</button>
+                <p class="selector-title block-title">
+                  Block
+                </p>
+                <button class="block-selector">1</button> <button class="block-selector">2</button> <button class="block-selector">3</button> <button class="block-selector">4</button><br>
+                <button class="block-selector">5</button> <button class="block-selector">6</button> <button class="block-selector">7</button> <button class="block-selector">8</button>
               </div>
             </div>
           </div>
+
           <div class="question-input-pair">
-            <p class="question-label">Please select the available 
-              <span class="r-bold">labs</span>.
+            <p class="question-label">
+              Please select the available <span class="r-bold">labs</span>.
             </p>
+
             <div class="lab-selection">
               <div class="lab-selection-full-row">
-                <input class="lab-selection-filter" type="text" placeholder="SEARCH">
+                <input class="lab-selection-filter" placeholder="SEARCH" type="text">
               </div>
+
               <div class="lab-selection-full-row">
                 <div class="lab-selection-table">
                   <div class="lab-selection-full-row">
                     <div class="table-row-title">
-                      <p class="table-title w50">LAB ROOM #</p>
-                      <p class="table-title w50"># COMPUTERS</p>
+                      <p class="table-title w50">
+                        LAB ROOM #
+                      </p>
+
+                      <p class="table-title w50">
+                        # COMPUTERS
+                      </p>
                     </div>
                   </div>
+
                   <div class="lab-selection-table">
                     <div class="table-row-group">
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector selected-row"><i class="fas fa-minus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
+
                       <div class="table-row">
                         <div class="table-row-value-box">
-                          <p class="table-row-value w50">1110</p>
-                          <p class="table-row-value w50">32</p>
+                          <p class="table-row-value w50">
+                            1110
+                          </p>
+
+                          <p class="table-row-value w50">
+                            32
+                          </p>
                         </div>
                         <button class="table-row-selector"><i class="fas fa-plus"></i></button>
                       </div>
@@ -204,42 +409,28 @@
                   </div>
                 </div>
               </div>
-              <!--                      <div class="lab-selection-table">
-                <div class="table-row-title">
-                   <p class="table-title w50">LAB ROOM #</p>
-                   <p class="table-title w50"># COMPUTERS</p>
-                </div>
-                <div class="table-row-group">
-                   <div class="table-row">
-                      <div class="table-row-value-box">
-                         <p class="table-row-value w50">1110</p>
-                         <p class="table-row-value w50">32</p>
-                      </div>
-                      <button class="table-row-selector">ADD</button>
-                   </div>                           
-                </div>
-                </div> -->
             </div>
           </div>
+          <button class="next-button">NEXT</button>
         </div>
       </div>
     </div>
     <script>
       function setRevealEffect(a,b,c,d, e) {
-      	 $(a).click(function(){
-      	$(b).toggle();
+         $(a).click(function(){
+        $(b).toggle();
       });
       
       $(e).click(function(){
-      	var text = $(this).html();
-      	$(a).html(text);
-      	$(c).hide();
+        var text = $(this).html();
+        $(a).html(text);
+        $(c).hide();
       });
       
       $(document).bind('click', function(e) {
-      	var $clicked = $(e.target);
-      	if (! $clicked.parents().hasClass(d))
-      		$(c).hide();
+        var $clicked = $(e.target);
+        if (! $clicked.parents().hasClass(d))
+            $(c).hide();
       });
       }
       
