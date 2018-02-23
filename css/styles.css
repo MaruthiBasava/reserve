@@ -61,6 +61,9 @@
  }
 
  .question-1-block {
+ 	   margin-top: 200px;
+
+   width: 600px;
    height: 200px;
  }
 
@@ -362,6 +365,17 @@
    color: #000;
    border-width: 1.6px;
    border-color: #000;
+ }
+
+ @media screen and (max-width: 599px) {
+ 	.question-1-title, .question-1-block {
+ 		width: 300px;
+ 	}
+
+ 	.question-1-block {
+ 		margin-top: 120px; 
+ 	}
+
  }
 
  @media screen and (max-width: 1199px) {
