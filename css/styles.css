@@ -1,3 +1,7 @@
+ body {
+ 	overflow-x: hidden;
+ }
+
  .hidden {
    display: none;
  }
@@ -28,7 +32,7 @@
    position: relative;
    width: 70%;
    height: 100vh;
-   overflow-y: scroll;
+   overflow-x: hidden;
    float: left;
  }
 
@@ -207,6 +211,8 @@
    margin-left: 4px;
    margin-bottom: 4px;
    transition: ease-in 0.2s;
+   background: #FFF;
+
  }
 
  .block-selector:hover,
@@ -292,6 +298,7 @@
    font-size: 13px;
    float: left;
    text-align: center;
+   color: #000;
  }
 
  .table-row-selector {
@@ -306,6 +313,7 @@
    text-align: center;
    border-radius: 15px;
    transition: ease-in 0.2s;
+   background: #FFF;
  }
 
  .selected-row {
@@ -380,7 +388,7 @@
 
  @media screen and (max-width: 1199px) {
    body {
-     overflow: scroll;
+     overflow-y: scroll;
    }
    .black-block {
      width: 100%;
