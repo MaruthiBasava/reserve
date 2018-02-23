@@ -212,7 +212,6 @@
    margin-bottom: 4px;
    transition: ease-in 0.2s;
    background: #FFF;
-
  }
 
  .block-selector:hover,
@@ -298,7 +297,6 @@
    font-size: 13px;
    float: left;
    text-align: center;
-   color: #000;
  }
 
  .table-row-selector {
