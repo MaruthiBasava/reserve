@@ -92,7 +92,7 @@
    margin: 0 auto;
  }
 
- .creation-page-2-block {
+ .creation-page-block {
    width: 380px;
  }
 
@@ -212,15 +212,24 @@
    color: #FFF;
  }
 
- .lab-selection {}
+ .selection {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 295px;
+ }
+
+ .big {
+   width: 380px;
+ }
 
  .lab-selection-full-row {
    margin-top: 25px;
    width: 100%;
  }
 
- .lab-selection-filter {
-   width: 230px;
+ .selection-filter {
+   width: 320px;
    height: 29px;
    border: 1px solid #000;
    color: #000;
@@ -237,7 +246,7 @@
  }
 
  .table-row-title {
-   width: 240px;
+   width: 330px;
    height: 15px;
  }
 
@@ -253,6 +262,10 @@
    width: 50%;
  }
 
+ .w33 {
+   width: 33.333%;
+ }
+
  .table-row-group {}
 
  .table-row {
@@ -260,7 +273,7 @@
  }
 
  .table-row-value-box {
-   width: 240px;
+   width: 330px;
    height: 35px;
    background: #eee;
    float: left;
@@ -304,10 +317,26 @@
  }
 
  .next-button {
-   position: relative;
-   left: 50%;
+   margin-left: 50%;
+   margin-top: 100px;
    transform: translateX(-50%);
    width: 170px;
+   height: 60px;
+   background: #000;
+   border-radius: 10px;
+   font-size: 20px;
+   font-family: glacial-indiff-r;
+   text-align: center;
+   color: #FFF;
+   letter-spacing: 3px;
+   transition: ease-in 0.2s;
+ }
+
+ .reserve-button {
+   margin-left: 50%;
+   margin-top: 100px;
+   transform: translateX(-50%);
+   width: 330px;
    height: 60px;
    background: #000;
    border-radius: 10px;
@@ -327,7 +356,8 @@
    -moz-outline-style: none;
  }
 
- .next-button:hover {
+ .next-button:hover,
+ .reserve-button:hover {
    background-color: #FFF;
    color: #000;
    border-width: 1.6px;
