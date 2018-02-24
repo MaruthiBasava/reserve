@@ -231,7 +231,7 @@
    width: 380px;
  }
 
- .lab-selection-full-row {
+ .selection-full-row {
    margin-top: 25px;
    width: 100%;
  }
@@ -247,7 +247,7 @@
    letter-spacing: 0.9px;
  }
 
- .lab-selection-table {
+ .selection-table {
    margin-top: 15px;
    width: 100%;
    height: 500px;
@@ -311,7 +311,6 @@
    text-align: center;
    border-radius: 15px;
    transition: ease-in 0.2s;
-   background: #FFF;
  }
 
  .selected-row {
