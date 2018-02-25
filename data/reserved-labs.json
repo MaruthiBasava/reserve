@@ -1,0 +1,12 @@
+{
+	"reservedLabs" : [
+		{
+			"fullName" : "Brian Meermans", 
+			"department" : "Mathematics", 
+			"labNumber" : 1110, 
+			"deviceQuantity" : 32, 
+			"date" : "Dec. 11", 
+			"block": 6
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"carts" : [
+		{
+			"cartNumber" : 12, 
+			"type" : "Kindle", 
+			"deviceQuantity" : 32
+		}
+	]
+}

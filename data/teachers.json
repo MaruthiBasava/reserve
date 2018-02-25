@@ -1,0 +1,9 @@
+{
+	"teachers": [
+		{
+			"firstName" : "Brian",
+			"lastName" : "Meermans", 
+			"department" : "Mathematics"
+		}
+	]
+}

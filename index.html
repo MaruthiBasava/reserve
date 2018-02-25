@@ -10,7 +10,8 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="http://code.jquery.com/jquery-3.3.1.min.js">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js">
     </script>
   </head>
   <body>
@@ -22,17 +23,18 @@
       </div>
 
       <div class="white-block">
-        <div class="question-1-block center hidden">
+        <div class="question-1-block center">
           <p class="question-1-title">
             Need to reserve a <span class="r-bold">computer lab</span> or <span class="r-bold">cart</span>?
           </p>
 
           <div class="button-group-question-1">
-            <button class="question-1-button">COMPUTER LAB</button> <button class="question-1-button">COMPUTER CART</button>
+            <button class="question-1-button .c-lab">COMPUTER LAB</button> 
+            <button class="question-1-button .c-cart">COMPUTER CART</button>
           </div>
         </div>
 
-        <div class="creation-page-block center">
+        <div class="creation-page-block b-lab center hidden">
           <p class="creation-page-title">
             COMPUTER LAB
           </p>
@@ -414,7 +416,7 @@
           <button class="next-button">NEXT</button>
         </div>
 
-        <div class="creation-page-block center hidden">
+        <div class="creation-page-block b-cart center hidden">
           <p class="creation-page-title">
             COMPUTER CART
           </p>
@@ -895,7 +897,7 @@
           <button class="next-button">NEXT</button>
         </div>
 
-        <div class="creation-page-block center hidden">
+        <div class="creation-page-block b-teacher center hidden">
           <p class="creation-page-title">
             TEACHER INFO
           </p>
@@ -1146,14 +1148,14 @@
 
     <div class="main-container">
       <div class="">
-        <p class="main-title black r-30">
+        <p class="main-title table-main-title black w33">
           reserve.
         </p>
       </div>
 
       <div class="center block">
         <div class="full-row button-down-space">
-          <button class="small-reserve-button">RESERVE</button>
+          <button class="small-reserve-button reserve">RESERVE</button>
         </div>
 
         <div class="full-row">
@@ -1744,38 +1746,6 @@
         </div>
       </div>
     </div>
-    <script>
-      function setRevealEffect(a,b,c,d, e) {
-         $(a).click(function(){
-        $(b).toggle();
-      });
-      
-      $(e).click(function(){
-        var text = $(this).html();
-        $(a).html(text);
-        $(c).hide();
-      });
-      
-      $(document).bind('click', function(e) {
-        var $clicked = $(e.target);
-        if (! $clicked.parents().hasClass(d))
-            $(c).hide();
-      });
-      }
-      
-      setRevealEffect(".month-selector",
-       "#monthSelector",
-       ".month-content",
-       "time-month-selection", ".month-content .question-label");
-      
-       setRevealEffect(".day-selector",
-       "#daySelector",
-       ".day-content",
-        "time-day-selection", ".day-content .question-label");
-      
-      
-      setRevealEffect();
-      
-    </script>
+
   </body>
 </html>
